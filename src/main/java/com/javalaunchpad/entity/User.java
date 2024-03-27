@@ -5,14 +5,14 @@ public class User {
     private String firstName = "John";
     private String lastName = "Doe";
     private String email = "john@javalaunchpad.com";
-    private Age age;
+    private Salary salary;
 
-    public Age getAge() {
-        return age;
+    public Salary getSalary() {
+        return salary;
     }
 
-    public void setAge(Age age) {
-        this.age = age;
+    public void setSalary(Salary salary) {
+        this.salary = salary;
     }
 
     public String getFirstName() {

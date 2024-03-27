@@ -58,9 +58,8 @@
         <form:input type="text" id="last_name" path="lastName" />
         <label for="email">Email:</label>
         <form:input type="email" id="email" path="email" />
-        <label for="age">Age:</label>
-        <form:input type="text" id="age" path="age.value" />
-        <form:input type="text" id="age" path="age.unit" />
+        <label for="salary">Salary:</label>
+        <form:input type="text" id="salary" path="salary" />
         <button type="submit">Sign Up</button>
     </form:form>
 </div>
