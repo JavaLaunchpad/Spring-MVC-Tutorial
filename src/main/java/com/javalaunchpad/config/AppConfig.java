@@ -13,7 +13,7 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 @Configuration
 @ComponentScan(basePackages = "com.javalaunchpad")
 @EnableWebMvc
-public class AppConfig  implements WebMvcConfigurer {
+public class AppConfig {
 
     @Bean
     public ViewResolver viewResolver() {
@@ -21,10 +21,5 @@ public class AppConfig  implements WebMvcConfigurer {
         viewResolver.setPrefix("/WEB-INF/view/");
         viewResolver.setSuffix(".jsp");
         return viewResolver;
-    }
-
-    @Override
-    public void addFormatters(FormatterRegistry registry) {
-        registry.addFormatter(new SalaryFormatter());
     }
 }

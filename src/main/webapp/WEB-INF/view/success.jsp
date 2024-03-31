@@ -13,6 +13,6 @@
 <body style="text-align: center">
     <h1>JavaLaunchpad</h1>
     <h2>Thank you for subscribing!</h2>
-    <p>Kudos ${user.firstName} ${user.lastName} (${user.age.value} ${user.age.unit})! You have successfully subscribed to the JavaLaunchpad email list. See you next week.</p>
+    <p>Kudos ${user.firstName} ${user.lastName} (${user.salary.amount} ${user.salary.currency})! You have successfully subscribed to the JavaLaunchpad email list. See you next week.</p>
 </body>
 </html>

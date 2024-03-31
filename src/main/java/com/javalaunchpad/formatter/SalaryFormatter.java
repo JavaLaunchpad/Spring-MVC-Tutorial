@@ -10,10 +10,11 @@ public class SalaryFormatter implements Formatter<Salary> {
 
     @Override
     public Salary parse(String text, Locale locale) throws ParseException {
-        String[] parts = text.split(" ");
+        String ammount =  text.substring(0 ,text.indexOf(' '));
+        String currency = text.substring(text.indexOf(' ') + 1);
         Salary salary = new Salary();
-        salary.setCurrency(parts[0]);
-        salary.setAmount(Double.parseDouble(parts[1]));
+        salary.setCurrency(currency);
+        salary.setAmount(Double.parseDouble(ammount));
         return salary;
     }
 
