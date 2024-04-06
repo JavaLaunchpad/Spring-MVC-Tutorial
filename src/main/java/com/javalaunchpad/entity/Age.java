@@ -19,4 +19,12 @@ public class Age {
     public void setUnit(String unit) {
         this.unit = unit;
     }
+
+    @Override
+    public String toString() {
+        return "Age{" +
+                "value=" + value +
+                ", unit='" + unit + '\'' +
+                '}';
+    }
 }
