@@ -1,8 +1,8 @@
 package com.javalaunchpad.entity;
 
 public class Salary {
-    private String currency;
-    private Double amount;
+    private String currency = "USD";
+    private Double amount = 1000.0;
 
     public String getCurrency() {
         return currency;

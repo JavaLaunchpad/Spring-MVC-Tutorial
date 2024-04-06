@@ -2,6 +2,7 @@ package com.javalaunchpad.formatter;
 
 import com.javalaunchpad.entity.Salary;
 import org.springframework.format.Formatter;
+import org.springframework.format.number.NumberStyleFormatter;
 
 import java.text.ParseException;
 import java.util.Locale;
@@ -20,6 +21,7 @@ public class SalaryFormatter implements Formatter<Salary> {
 
     @Override
     public String print(Salary object, Locale locale) {
+        System.out.println("object = " + object);
         return object.getCurrency() + " " + object.getAmount();
     }
 }
