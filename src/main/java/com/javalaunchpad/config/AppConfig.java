@@ -28,4 +28,10 @@ public class AppConfig implements WebMvcConfigurer {
     public void addInterceptors(InterceptorRegistry registry) {
         registry.addInterceptor(new IPInterceptor());
     }
+
+
+//    @Override
+//    public void addInterceptors(InterceptorRegistry registry) {
+//        registry.addInterceptor(new IPInterceptor()).addPathPatterns("/test");
+//    }
 }

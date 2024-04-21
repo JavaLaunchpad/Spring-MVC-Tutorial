@@ -4,7 +4,7 @@ import jakarta.servlet.http.HttpServletRequest;
 
 public class IPUtils {
 
-    static String[] blacklistedIps =  {"" , "" , ""}; // Add the blacklisted IPs here
+    static String[] blacklistedIps =  {"127.0.0.1" , "" , ""}; // Add the blacklisted IPs here
 
 
     // Method to get the IP address of the client
